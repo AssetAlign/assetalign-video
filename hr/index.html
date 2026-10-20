@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>AssetAlign for HR Leaders</title>
+<meta name="description" content="A personalized financial plan for every employee, at no cost to your company or your employees.">
+<meta property="og:title" content="AssetAlign for HR Leaders">
+<meta property="og:description" content="More for your people. At no cost.">
+<meta property="og:image" content="https://assetalign.github.io/assetalign-video/assets/hr-poster.jpg">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0D1F33;--gold:#F5A623;--copper:#C9843A;--cream:#F8F5EF;--ink2:#4A5568;--line:#E7E1D4}
+*{box-sizing:border-box;margin:0}
+html,body{background:var(--cream);color:var(--navy);font-family:'DM Sans',Arial,sans-serif}
+body{min-height:100vh;display:flex;flex-direction:column}
+header{background:var(--navy);padding:14px 32px;display:flex;align-items:center}
+header img{height:40px}
+main{flex:1;width:100%;max-width:960px;margin:0 auto;padding:40px 24px 32px;text-align:center}
+.k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);font-weight:700}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:40px;line-height:1.15;margin:10px 0}
+.lede{font-size:17px;color:var(--ink2);line-height:1.5;max-width:640px;margin:0 auto 26px}
+.player{background:var(--navy);border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(13,31,51,.18)}
+video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:var(--navy)}
+.cta{margin-top:26px;display:flex;flex-direction:column;align-items:center;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:999px;background:var(--gold);color:var(--navy);font-weight:700;font-size:17px;text-decoration:none;box-shadow:0 8px 20px rgba(245,166,35,.3)}
+.btn:focus-visible,.alt a:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+.alt{font-size:14px;color:var(--ink2)}
+.alt a{color:var(--navy);font-weight:700}
+.addr{font-size:13px;color:#6B7785}
+.points{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px;text-align:left}
+.pt{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.pt b{display:block;font-size:15px;margin-bottom:4px}
+.pt span{font-size:14px;color:var(--ink2);line-height:1.45}
+footer{text-align:center;font-size:12px;color:#6B7785;padding:18px 16px 26px}
+@media (max-width:640px){header{padding:12px 16px}main{padding:28px 16px 24px}h1{font-size:30px}.lede{font-size:16px}.points{grid-template-columns:1fr}}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head><body>
+<header><img src="../assets/aa-logo-dark.png" alt="AssetAlign"></header>
+<main>
+  <div class="k">For HR and benefits leaders</div>
+  <h1>More for your people. At no cost.</h1>
+  <p class="lede">A personalized financial plan for every employee, a vetted independent advisor and rewards for taking action, at no cost to your company or your employees.</p>
+  <div class="player"><video id="vid" controls playsinline preload="metadata" poster="../assets/hr-poster.jpg"><source src="../video/assetalign-hr-leaders.mp4" type="video/mp4"></video></div>
+  <div class="cta">
+    <a class="btn" id="walk" href="mailto:support@assetalign.net?subject=Demo%20Requested&body=Hi%20AssetAlign%20team%2C%0A%0AI%20watched%20the%20AssetAlign%20video%20and%20would%20like%20to%20schedule%20a%20walkthrough.%0A%0AName%3A%0ACompany%3A%0ANumber%20of%20employees%3A%0AA%20few%20times%20that%20work%20for%20me%3A%0A%0AThanks%2C">Book a Walkthrough <span aria-hidden="true">&rarr;</span></a>
+    <div class="alt">Prefer to pick a time? <a id="cal" href="https://calendly.com/demo-assetalign/30min" target="_blank" rel="noopener">Choose one on our calendar</a></div>
+    <div class="addr">Or email us at support@assetalign.net</div>
+  </div>
+  <div class="points">
+    <div class="pt"><b>No cost, ever</b><span>Nothing for your company or your employees to pay, now or later.</span></div>
+    <div class="pt"><b>A plan for every employee</b><span>Wherever they're starting from, each employee gets a plan and a vetted advisor.</span></div>
+    <div class="pt"><b>Nothing for HR to manage</b><span>No enrollment changes and no IT project. We handle onboarding and support.</span></div>
+  </div>
+</main>
+<footer>AssetAlign is a voluntary benefit made available by employers at no cost to employees.</footer>
+<script>
+(function(){
+var NL=String.fromCharCode(10), AA_REFS={"56739585dfd9699c":{"i":"KBzmC2GAvxYz0fdD","c":"35ybkLSX05N1KiXzQzGAMl1zmhGmXOhP00vWygH2boXNJJHbBw/r5bYUtQ=="},"26ae03f9603cc7f7":{"i":"ll4OoH8vFoBx5H0h","c":"SWgUEV6lg8uCCtcod0vZWEKbnvBCp73wql94+K4nQZQ="},"053b397e7663fa02":{"i":"Z2Btq147Ql5doVCy","c":"e8zATnoWESLaL65Aco2XOF4mrBnsVEldoYsVSSwMI/I="},"578379ae50733bb7":{"i":"IqwEGkpC6sGmrX3i","c":"lpxy52kAIqp3bfwrEQX5ZQh4DJ6LBLdVgbWc+ffxWeyo9TyLvA=="}};
+try{emailjs.init('kX8q18hmRaom62pMz');}catch(e){}
+function owner(){try{var p=new URLSearchParams(location.search);if(p.get('me')==='1')localStorage.setItem('aa_owner','1');if(p.get('me')==='0')localStorage.removeItem('aa_owner');return localStorage.getItem('aa_owner')==='1';}catch(e){return false;}}
+var muted=owner(), geo=null, who=null;
+var u=function(b){return Uint8Array.from(atob(b),function(c){return c.charCodeAt(0);});};
+async function sh(t){return new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t)));}
+async function resolve(){try{var p=new URLSearchParams(location.search);var r=(p.get('ref')||'').trim();if(!r)return null;
+ var id=Array.from(await sh('aa-id|'+r)).map(function(b){return b.toString(16).padStart(2,'0');}).join('').slice(0,16);var e=AA_REFS[id];
+ if(e){var k=await crypto.subtle.importKey('raw',await sh('aa-ref|'+r),'AES-GCM',false,['decrypt']);return new TextDecoder().decode(await crypto.subtle.decrypt({name:'AES-GCM',iv:u(e.i)},k,u(e.c)));}
+ return '[ref: '+r+']';}catch(e){return null;}}
+var ready=Promise.all([fetch('https://ipapi.co/json/').then(function(r){return r.json();}).then(function(g){geo=g;}).catch(function(){}),resolve().then(function(w){who=w;})]);
+function notify(what){ if(muted)return; ready.then(function(){var g=geo,loc=g?((g.city||'?')+', '+(g.region||'?')+', '+(g.country_name||'?')):'unavailable';
+ try{emailjs.send('service_jy3zs68','template_a3slvpn',{to_email:'alex@assetalign.net',subject:(who||'Someone (untagged link)')+' '+what,
+  message:'Who: '+(who||'Untagged link, no name')+NL+NL+'What: '+what+NL+'Location: '+loc+NL+'IP: '+(g?g.ip:'unavailable')+NL+'Network / ISP: '+(g?(g.org||'?'):'unavailable')+NL+'Device: '+(/Mobile|Android|iPhone|iPad/.test(navigator.userAgent)?'Mobile':'Desktop')+NL+'Came from: '+(document.referrer||'direct')+NL+'Time: '+new Date().toLocaleString('en-US',{dateStyle:'medium',timeStyle:'short'})+NL+'Full URL: '+location.href,
+  name:'HR video visitor',email:'noreply@assetalign.net',reply_to:'noreply@assetalign.net'});}catch(e){}});}
+notify('opened the AssetAlign HR leader video page');
+var v=document.getElementById('vid'),pl=false,en=false,wk=false,cl=false;
+v.addEventListener('play',function(){if(pl)return;pl=true;notify('started watching the AssetAlign HR leader video');});
+v.addEventListener('ended',function(){if(en)return;en=true;notify('watched the AssetAlign HR leader video to the end');});
+document.getElementById('walk').addEventListener('click',function(){if(wk)return;wk=true;notify('clicked Book a Walkthrough (Demo Requested email opened)');});
+document.getElementById('cal').addEventListener('click',function(){if(cl)return;cl=true;notify('clicked to pick a time on the calendar');});
+})();
+</script>
+</body></html>
